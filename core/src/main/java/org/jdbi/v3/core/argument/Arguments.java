@@ -38,9 +38,9 @@ public class Arguments implements JdbiConfig<Arguments> {
     private final List<QualifiedArgumentFactory> factories = new CopyOnWriteArrayList<>();
     private ConfigRegistry registry;
     private Argument untypedNullArgument = new NullArgument(Types.OTHER);
+    private ConfigRegistry registry;
 
-    public Arguments() {
-        // TODO move to BuiltInSupportPlugin
+    public Arguments() {}
 
         // the null factory must be interrogated last to preserve types!
         register(new UntypedNullArgumentFactory());
