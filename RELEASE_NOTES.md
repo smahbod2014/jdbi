@@ -1,6 +1,8 @@
 #3.7.0
 - New Features
   - @AllowUnusedBindings SqlObject customizer, like SqlStatements.setUnusedBindingsAllowed
+- Improvements
+  - Improve Error handling with transactions
 
 #3.6.0
 - New Features
